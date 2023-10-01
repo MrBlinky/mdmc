@@ -1,0 +1,27 @@
+-----------------
+MDMC v2 part list
+-----------------
+
+R1 = 100 kOhm
+R2 = 1 kOhm
+
+C1 = 4,7 uF (alternatives 1uF or 10uF)
+C2 = 1 nF
+C3, C4, C5 = 100 nF
+
+D1,D2,D3* = 1N4148
+
+IC1 = EEPROM: 27C080, 27C040, 27C020, 27C010 or FLASH: 29C040, 29C020, 29C010
+IC2 = 74HCT273 (alternatives 74HC273, 74LS273)
+IC3 = 74HCT04 (alternatives  74HC04, 74LS04)
+
+Optional:
+
+32 pin IC socket
+Garyma DS-429 momentary push button (for return to menu feature)
+
+Notes:
+
+* D3 required when bank locking feature is wanted for 4K roms that accidently may trigger bankswitch hotspots.
+  D3 should not be used when bankswitch games are present in upper 512K of a 1MEG EPROM.
+  D3 should not be used for 512K reprogrammable flash cart.
