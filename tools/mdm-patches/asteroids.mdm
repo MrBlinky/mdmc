@@ -1,0 +1,33 @@
+; Name: Asteroids (1981)
+;  MD5: dd7884b4f93cab423ac471aa1935e3df
+
+; Name: Asteroids (1981) (PAL)
+;  MD5: 8cf0d333bbe85b9549b1e6b1e2390b8d
+
+; Name: Asteroids (1981) [no copyright]
+;  MD5: ccbd36746ed4525821a8083b0d6d2c2c
+
+; Name: Asteroids (1981) (PAL) [no copyright]
+;  MD5: bb5049e4558daade0f87fed69a244c59
+
+00:FFF0 8D F9 FF > 0C +01 08
+
+00:D2F7 A1 83 > 68 EA       ;PLA NOP 6 cycle delay
+00:D2F9 A1 83 > 68 EA       ;PLA NOP 6 cycle delay
+
+00:D307 A1 83 > 68 EA       ;PLA NOP 6 cycle delay
+00:D309 A1 83 > 68 EA       ;PLA NOP 6 cycle delay
+00:D30B A1 83 > 68 EA       ;PLA NOP 6 cycle delay
+00:D30D A1 83 > 68 EA       ;PLA NOP 6 cycle delay
+00:D30F A1 83 > 68 EA       ;PLA NOP 6 cycle delay
+
+00:D349 A1 83 CA > 4C 9C D5 ;JMP D59C break out for 6 cycle delay
+00:D39D A1 83 A9 > 4C A0 D5 ;JMP D5A0 break out for 6 cycle delay
+
+00:D59C 00       > CA       ;DEX  do overwritten instruction
+00:D59D 00 00 00 > 4C 4C D3 ;JMP D34C resume normally
+
+00:D5A0 00 00    > A9 00    ;LDA #00  do partly overwritten instruction
+00:D5A2 00 00 00 > 4C A1 D3 ;JMP D3A1 resume normally
+
+01:FFF0 8D F8 FF > 0C +00 08

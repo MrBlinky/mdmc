@@ -1,0 +1,13 @@
+; Name: Vanguard_(1982)_(Atari)
+;  MD5: c6556e082aac04260596b4045bc122de
+
+; Name: Vanguard_(1982)_(Atari)_(PAL)
+;  MD5: 3caa902ac0ce4509308990645876426a
+
+; Name: Vanguard_(1982)_(Atari)_(PAL)_[A1]
+;  MD5: 9d0befa555f003069a21d2f6847ad962
+
+00:F000  8D F9 FF > 0C +01 08
+00:FFF2  8D F9 FF > 0C +01 08
+
+01:FFF2  8D F8 FF > 0C +00 08

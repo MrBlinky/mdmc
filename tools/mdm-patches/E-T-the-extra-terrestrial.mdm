@@ -1,0 +1,23 @@
+; Name: E_T_The_Extra-Terrestrial_(1982)_(Atari)
+;  MD5: 615a3bf251a38eb6638cdc7ffbde5480
+
+; Name: E_T_The_Extra-Terrestrial_(1982)_(Atari)_(PAL)
+;  MD5: 8febdd9142960d084ab6eeb1d3e88969
+
+; Name: E_T_The_Extra-Terrestrial_(1982)_(Atari)_(PAL)_[A1]
+;  MD5: a511f7ee13e4b35512f9217a677b4028
+
+; Name: E_T_The_Extra-Terrestrial_(CCE)
+;  MD5: c82ec00335cbb4b74494aecf31608fa1
+
+; Name: ET_Fixed_Final
+;  MD5: b50ae55aac93fbed258bc5a873edd2cb
+
+00:B000 AD F8 FF > AD +00 08
+00:BCC0 A9 F9    > A9 +01
+00:BCC4 A9 FF    > A9 08
+
+01:F000 AD F8 FF > AD +00 08
+01:F4E0 A9 F8    > A9 +00
+01:F4E4 A9 FF    > A9 08
+

@@ -1,0 +1,20 @@
+; Name: H.E.R.O.
+;  MD5: fca4a5be1251927027f2c24774a02160
+
+; Name: H_E_R_O_(1984)_(Activision)_[A1]
+;  MD5: 66b92ede655b73b402ecd1f4d8cd9c50
+
+; Name: H.E.R.O. (1984) (Activision) (PAL) [!]
+;  MD5: d9b49f0678776e04916fa5478685a819
+
+; Name: H_E_R_O_(1984)_(Activision)_(PAL)_[A1]
+;  MD5: 467340a18158649aa5e02a4372dcfccd
+
+; Name: H_E_R_O_(1984)_(CCE)
+;  MD5: 1d284d6a3f850bafb25635a12b316f3d
+
+00:0002 f9 ff > +01 08 
+00:0ff3 f9 ff > +01 08 
+
+01:0002 f9 ff > +01 08 
+01:0fed f8 ff > +00 08 

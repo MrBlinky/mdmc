@@ -1,0 +1,16 @@
+; Name: slideboy_final.bin
+;  MD5: 024e97dabc0b083c31ea52a83cca4e01
+
+; Note:
+; This game needs to be launched from a menu or the
+; 4K safety net rom must be used in bank 0 otherwise
+; this game will most likely not start
+
+00:FFEB BD F3 1F > BD +FF +07 ;LDA 1FF3,X > LDA 07FF,X
+01:FFEB BD F3 1F > BD +FF +07 ;LDA 1FF3,X > LDA 07FF,X
+02:FFEB BD F3 1F > BD +FF +07 ;LDA 1FF3,X > LDA 07FF,X
+03:FFEB BD F3 1F > BD +FF +07 ;LDA 1FF3,X > LDA 07FF,X
+04:FFEB BD F3 1F > BD +FF +07 ;LDA 1FF3,X > LDA 07FF,X
+05:FFEB BD F3 1F > BD +FF +07 ;LDA 1FF3,X > LDA 07FF,X
+06:FFEB BD F3 1F > BD +FF +07 ;LDA 1FF3,X > LDA 07FF,X
+07:FFEB BD F3 1F > BD +FF +07 ;LDA 1FF3,X > LDA 07FF,X

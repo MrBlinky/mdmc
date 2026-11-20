@@ -1,0 +1,11 @@
+; Name: Tapper_(1983)_(Sega)
+;  MD5: c0d2434348de72fa6edcc6d8e40f28d7
+
+; Name: Tapper (1984) (Sega) (PAL60) Tim Vangenechten 
+;  MD5: 5ef50444a9d3aa930042bbcf91385984
+
+00:D722  A9 F9 > A9 +01
+00:DBCE  A9 FF > A9  08
+
+01:F0C3  A9 F8    > A9 +00
+01:F0C7  A2 FF 9A > A2  08 EA

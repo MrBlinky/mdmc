@@ -1,0 +1,12 @@
+; Name: Centipede_(1982)_(Atari)
+;  MD5: 91c2098e88a6b13f977af8c003e0bca5
+
+; Name: Centipede_(1982)_(Atari)_(PAL)
+;  MD5: 17d000a2882f9fdaa8b4a391ad367f00
+
+00:F000  8D F9 FF > 0C +01 08
+00:FFEC  8D F9 FF > 0C +01 08
+00:FFF2  8D F9 FF > 0C +01 08
+
+01:FFEC  8D F8 FF > 0C +00 08
+01:FFF2  8D F8 FF > 0C +00 08

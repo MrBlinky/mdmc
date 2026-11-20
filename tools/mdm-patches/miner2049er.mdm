@@ -1,0 +1,52 @@
+; Name: Miner 2049er - Starring Bounty Bob (1982) (Tigervision) (7-008) ~.bin
+;  MD5: fa0570561aa80896f0ead05c46351389
+
+; Name: Miner 2049er - Starring Bounty Bob (1982) (Tigervision) (7-008) [fixed] ~.bin
+;  MD5: 3b040ed7d1ef8acb4efdeebebdaa2052
+
+; Name: Miner2049er (faster).bin
+;  MD5: 3b735198e45b776abf903c482b2805e0
+
+; Name: Miner 2049er - Starring Bounty Bob (1982) (Tigervision - Teldec) (7-008 - 3.60006 VG) (PAL).bin
+;  MD5: c517144e3d3ac5c06f2f682ebf212dd7
+
+; Name: Miner 2049er (faster) (PAL).bin
+;  MD5: d6b487070b01a2b33acee50a65c7dff1
+
+ROMTYPE=3F ;8K TigerVision rom needs to be expanded to 12K
+
+;bankswitch patches. replaces LDA #$0x and STA $3F with LDA $080x and NOP
+
+03:0004 A9 02 85 3F > AD +02 08 EA
+03:04F6 A9 01 85 3F > AD +01 08 EA
+03:076C A9 02 85 3F > AD +02 08 EA
+03:078B A9 00 85 3F > AD +00 08 EA
+03:0792 A9 00 85 3F > AD +00 08 EA
+03:07A1 A9 02 85 3F > AD +02 08 EA
+03:07A8 A9 01 85 3F > AD +01 08 EA
+03:07AF A9 02 85 3F > AD +02 08 EA
+03:07B6 A9 00 85 3F > AD +00 08 EA
+03:07BB A9 02 85 3F > AD +02 08 EA
+03:07C2 A9 02 85 3F > AD +02 08 EA
+03:07C9 A9 02 85 3F > AD +02 08 EA
+03:07D0 A9 02 85 3F > AD +02 08 EA
+03:07D7 A9 01 85 3F > AD +01 08 EA
+03:07DE A9 01 85 3F > AD +01 08 EA
+
+;fix the 3 lives bug (restart mid game with lives < 3):
+
+00:0644: 64 > F9
+00:0645: 3F > 37
+00:07F9: FF > A9
+00:07FA: FF > 03
+00:07FB: FF > 85
+00:07FC: FF > CF
+00:07FD: FF > 4C
+00:07FE: FF > 64
+00:07FF: xx > 3F
+
+;Speed patched roms have the following changes (not patched here):
+
+;00:0170 F0 EE > A9 07 ;For NTSC
+
+;00:0170 F0 EE > EA EA ;For PAL
